@@ -1,6 +1,6 @@
-## WHY do I exist?
+## Why do I exist?
 
-If I begin with making a web-app this is the basic dockerized image where I can start from.
+For web-app development this is the basic working dockerized image to start from.
 
 ## How to run this?
 
@@ -20,9 +20,9 @@ If I begin with making a web-app this is the basic dockerized image where I can 
 1. Create a test internal network `sudo docker network create -d bridge test.io`
 1. Build docker image in root project `sudo docker build -t basic_flask:v1.0 -f Dockerfile .`
 1. Run the docker image (as container) `sudo docker run -itd --rm=true --network=test.io -p 5001:5501 --name=basic_flask basic_flask:v1.0`
- - host computers port 5001 will have the app available
- - docker port 5501 is exposed as set in src/app.py
- - it will run in detached mode
+    - host computers port 5001 will have the app available
+    - docker port 5501 is exposed as set in src/app.py
+    - it will run in detached mode
 
 ## Handy docker commands
 
